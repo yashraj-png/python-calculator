@@ -1,0 +1,142 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "daacaf7b-ae4b-4298-809d-0975a90e8ead",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "please select an operation\n",
+      "1. addition\n",
+      "2. subtraction\n",
+      "3. multiplication\n",
+      "4. division\n",
+      "5. exit\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "choose the operation number:  1\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "please enter any two numbers to perform an operation\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "first number:  2\n",
+      "second number:  4\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2.0 + 4.0 = 6.0\n",
+      "please select an operation\n",
+      "1. addition\n",
+      "2. subtraction\n",
+      "3. multiplication\n",
+      "4. division\n",
+      "5. exit\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "choose the operation number:  5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Calculator closed\n"
+     ]
+    }
+   ],
+   "source": [
+    "while True:\n",
+    "    print(\"please select an operation\")\n",
+    "    print(\"1. addition\")\n",
+    "    print(\"2. subtraction\")\n",
+    "    print(\"3. multiplication\")\n",
+    "    print(\"4. division\")\n",
+    "    print(\"5. exit\")\n",
+    "\n",
+    "    n = int(input(\"choose the operation number: \"))\n",
+    "\n",
+    "    if n == 5:\n",
+    "        print(\"Calculator closed\")\n",
+    "        break\n",
+    "\n",
+    "    elif n in [1, 2, 3, 4]:\n",
+    "\n",
+    "        print(\"please enter any two numbers to perform an operation\")\n",
+    "\n",
+    "        a = float(input(\"first number: \"))\n",
+    "        b = float(input(\"second number: \"))\n",
+    "\n",
+    "        if n == 1:\n",
+    "            print(a, \"+\", b, \"=\", a + b)\n",
+    "\n",
+    "        elif n == 2:\n",
+    "            print(a, \"-\", b, \"=\", a - b)\n",
+    "\n",
+    "        elif n == 3:\n",
+    "            print(a, \"x\", b, \"=\", a * b)\n",
+    "\n",
+    "        elif n == 4:\n",
+    "            if b == 0:\n",
+    "                print(\"cannot divide by 0\")\n",
+    "            else:\n",
+    "                print(a, \"/\", b, \"=\", a / b)\n",
+    "\n",
+    "    else:\n",
+    "        print(\"invalid choice!! :(\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "66d50fc3-208c-4caf-abc7-e47504620041",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
